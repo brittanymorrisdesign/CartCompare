@@ -29,14 +29,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/scan',
+        redirectTo: '/login',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/scan',
+    redirectTo: '/login',
     pathMatch: 'full'
   }
 ];
