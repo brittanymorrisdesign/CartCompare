@@ -1,5 +1,6 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, OnInit } from '@angular/core';
 import { ToastController, LoadingController, Platform } from '@ionic/angular';
+import { AuthenticationService } from "../shared/authentication-service";
 import jsQR from 'jsqr';
 
 @Component({
@@ -8,7 +9,7 @@ import jsQR from 'jsqr';
   styleUrls: ['scan.page.scss']
 })
 
-export class ScanPage {
+export class ScanPage implements OnInit {
   @ViewChild('video', { static: false }) video: ElementRef;
   @ViewChild('canvas', { static: false }) canvas: ElementRef;
   @ViewChild('fileinput', { static: false }) fileinput: ElementRef;
@@ -23,7 +24,8 @@ export class ScanPage {
   constructor(
     private toastCtrl: ToastController,
     private loadingCtrl: LoadingController,
-    private plt: Platform
+    private plt: Platform,
+    public authService: AuthenticationService
   ) {
     let newVariable: any;
     newVariable = window.navigator;
@@ -151,5 +153,7 @@ export class ScanPage {
 
   stopScan() {
     this.scanActive = false;
+  }
+  ngOnInit() {
   }
 }
