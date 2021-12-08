@@ -1,15 +1,15 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Scan
+  <ion-toolbar class="app-header">
+    <ion-title class="title">
+      Scan Your Barcode
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Scan</ion-title>
+    <ion-toolbar class="app-header">
+      <ion-title size="large">Scan Your Barcode</ion-title>
     </ion-toolbar>
   </ion-header>
 
@@ -17,14 +17,14 @@
   <input #fileinput type="file" accept="image/*;capture=camera" hidden (change)="handleFile($event.target.files)">
 
   <!-- Trigger the file input -->
-  <ion-button expand="full" (click)="captureImage()">
-    <ion-icon slot="start" name="camera"></ion-icon>
-    Capture Image
-  </ion-button>
-
-  <ion-button color="secondary" expand="full" (click)="startScan()">
+  <ion-button class="scan-btn" color="secondary" expand="full" (click)="startScan()">
     <ion-icon slot="start" name="qr-scanner"></ion-icon>
     Start scan
+  </ion-button>
+
+  <ion-button class="capture-btn" expand="full" (click)="captureImage()">
+    <ion-icon slot="start" name="camera"></ion-icon>
+    Capture Image
   </ion-button>
 
   <ion-button expand="full" (click)="reset()" color="warning" *ngIf="scanResult">
