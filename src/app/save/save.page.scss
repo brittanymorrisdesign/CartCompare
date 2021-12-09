@@ -1,0 +1,27 @@
+.saveCard
+{
+    background-color: white;
+    height: 200px;
+    width:200px; 
+    display: inline-block; 
+    margin-left:10px;
+
+
+}
+.heart
+{
+float:right;
+height:30px;
+width:30px;
+}
+.megacard
+{
+    height: fit-content;
+}
+.titleSave
+{
+    display: block;
+}
+.savedRow{
+    display: flex;
+}
