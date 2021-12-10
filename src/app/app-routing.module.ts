@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'rewards-giftcard-redeem',
     loadChildren: () => import('./rewards-giftcard-redeem/rewards-giftcard-redeem.module').then( m => m.RewardsGiftcardRedeemPageModule)
   },
+  {
+    path: 'save-details',
+    loadChildren: () => import('./save-details/save-details.module').then( m => m.SaveDetailsPageModule)
+  },
 ];
 @NgModule({
   imports: [

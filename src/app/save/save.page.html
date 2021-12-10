@@ -1,18 +1,38 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Save
+      Saved Items
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Save</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <!--Content-->
+  <div>
+    <img src="./assets/rewards/Logo.png">
+  </div>
 
-  <!--End of Content-->
+  <div class="banner">
+    <img src="./assets/saved/banner.jpg">
+    <div class="banner_saveditems"><b>Saved Items</b></div>
+    <div class="banner_search"><ion-searchbar></ion-searchbar></div>
+  </div>
+
+  <div class="wrapper">
+    <div>
+      <a href="../save-details">
+      <img class="item_pic" src="./assets/saved/beats.jpg" width="130" height="130">
+      </a>
+      <p class="description"><b>Beats by Dr. Dre Headphones</b><br> $229.99+ / 3 Stores <br> 3,000 points</p>
+    </div>
+    <div>
+      <img class="item_pic" src="./assets/saved/iphone13.jpg" width="130" height="130">
+      <p class="description"><b>IPhone 13 Max Pro</b><br>$1,229.99+ / 5 Stores<br>10,000 points</p>
+    </div>
+    <div>
+      <img class="item_pic" src="./assets/saved/apple_airpod.jpg" width="130" height="130">
+      <p class="description"><b>Apple Airpods</b><br>$99.99+ / 5 Stores<br>1,000 points</p>
+    </div>
+
+  </div>
+
 </ion-content>

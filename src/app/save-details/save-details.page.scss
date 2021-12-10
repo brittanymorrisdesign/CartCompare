@@ -1,0 +1,67 @@
+.back_banner{
+    position: relative;
+    text-align: center;
+}
+
+.back_button{
+    position: absolute;
+    top: 6px;
+    left: 12px;
+}
+
+.back_text{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    color:white;
+}
+
+.item_div{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding-bottom: 10px;
+}
+
+.item_text{
+    font-size: 12px;
+}
+
+.retail_header{
+    padding-left: 8px;
+}
+
+.one_item{
+    margin: 12px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+    padding-bottom: 5px;
+}
+
+.retail_info_div{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+}
+
+.retail_text_left{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.retail_text_right{
+    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+ion-button{
+    --background: #F79326;
+    --border-radius: 10px;
+}
+
+.add_button{
+    --background:white;
+    --border-color: #F79326;
+    --border-width: 1px;
+    --border-style: solid;
+    --color:#F79326;
+}

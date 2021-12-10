@@ -1,0 +1,38 @@
+.banner{
+    position: relative;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.banner_saveditems{
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: white;
+    font-size: 26px;
+}
+
+ion-searchbar{
+    --icon-color: #F79326;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -10px;
+    margin-bottom: 25px;
+  }
+
+  .item_pic{
+    margin-left: 12px;
+    margin-top: 22px;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+  .description{
+    font-size: 12px;
+    margin-left:16px;
+    margin-top: 2px;
+    margin-bottom: -12px;
+
+}

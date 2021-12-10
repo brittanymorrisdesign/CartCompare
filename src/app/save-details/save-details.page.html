@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Save Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="back_banner">
+    <img src="./assets/saved/back_banner.png">
+    <img class="back_button" src="./assets/saved/back_button.png">
+    <div class="back_text">Back to Saved Items</div>
+  </div>
+
+  <div class="item_div">
+    <img class="item_img" src="./assets/saved/beats.jpg" width="120" height="120">
+    <div class="item_text">
+      <p><b style="font-size:15px">Beats by Dr. Dre Headphones</b><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus neque elementum libero fringilla, sed ultrices ante aliquam. </p>
+    </div>
+  </div>
+
+  <p class="retail_header"><b>Available Retailers</b></p>
+  <div>
+    <div class="one_item">
+      <div class="retail_info_div">
+        <div>
+          <img style="padding:8px;" src="./assets/saved/bestbuylogo.png">
+        </div>
+        <div class="retail_text_left">
+          <b>Best Buy</b><br>2.3 Miles Away
+        </div>
+        <div class="retail_text_right">
+          $129.99<br>1,000 points
+        </div>
+      </div>
+      <ion-button size="small">Buy Now</ion-button>
+      <ion-button class="add_button" size="small" (click)="showAlert()">Add to Cart</ion-button>
+    </div>
+    <div class="one_item">
+      <div class="retail_info_div">
+        <div>
+          <img style="padding:8px;" src="./assets/saved/walmartlogo.png">
+        </div>
+        <div class="retail_text_left">
+          <b>Walmart</b><br>0.5 Miles Away
+        </div>
+        <div class="retail_text_right">
+          $99.99<br>800 points
+        </div>
+      </div>
+      <ion-button size="small">Buy Now</ion-button>
+      <ion-button class="add_button" size="small">Add to Cart</ion-button>
+    </div>
+    <div class="one_item">
+        <div class="retail_info_div">
+          <div>
+            <img style="padding:8px;" src="./assets/saved/applelogo.png">
+          </div>
+          <div class="retail_text_left">
+            <b>Apple</b><br>5.1 Miles Away
+          </div>
+          <div class="retail_text_right">
+            $119.99<br>900 points
+          </div>
+        </div>
+        <ion-button size="small">Buy Now</ion-button>
+        <ion-button class="add_button" size="small">Add to Cart</ion-button>
+      </div>
+
+  </div>
+
+
+
+  <!--temp button to go back-->
+  <ion-button (click)='return2Main()'>Back</ion-button>
+
+
+</ion-content>
