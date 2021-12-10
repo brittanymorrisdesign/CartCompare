@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
+  {
+    path: 'rewards-giftcard-info',
+    loadChildren: () => import('./rewards-giftcard-info/rewards-giftcard-info.module').then( m => m.RewardsGiftcardInfoPageModule)
+  },
+  {
+    path: 'rewards-giftcard-redeem',
+    loadChildren: () => import('./rewards-giftcard-redeem/rewards-giftcard-redeem.module').then( m => m.RewardsGiftcardRedeemPageModule)
+  },
 ];
 @NgModule({
   imports: [
