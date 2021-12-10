@@ -1,12 +1,24 @@
+.title {
+    margin:  20px 20px 20px 10px;
+    font-size: 30px;
+}
+
+.logo {
+    float: left;
+    margin: 10px;
+    width: 50vw;
+}
+
+.profile {
+    float: right;
+    margin: 20px;
+    width: 10vw;
+}
+
 .scan-btn {
     margin: 20px;
     align-items: center;
 }
 .capture-btn {
     margin: 20px;
-}
-
-.title {
-    margin:  20px 20px 20px 10px;
-    font-size: 30px;
 }
