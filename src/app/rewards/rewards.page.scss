@@ -1,10 +1,10 @@
+.ionic-header {
+    background-color: white;
+}
+
 .title {
     margin:  20px 20px 20px 10px;
     font-size: 30px;
-    position: absolute;
-    top: 20px;
-    color: white;
-    left: 16px;
 }
 
 .logo {
@@ -20,7 +20,16 @@
 }
 
 .banner {
-    z-index: 0;
+    margin-bottom: 10px;
+    position: fixed;
+}
+
+.banner-title {
+    position: absolute;
+    top: 20px;
+    color: white;
+    left: 16px;
+    font-size: 4vw;
 }
 
 .banner-points {
@@ -56,10 +65,14 @@
 }
 
 .grid {
-    position: static;
+    position: absolute;
     align-content: center;
 }
 
-.content {
-    margin: 40px;
+.content-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
