@@ -1,6 +1,10 @@
 .title {
     margin:  20px 20px 20px 10px;
     font-size: 30px;
+    position: absolute;
+    top: 20px;
+    color: white;
+    left: 16px;
 }
 
 .logo {
@@ -13,4 +17,49 @@
     float: right;
     margin: 20px;
     width: 10vw;
+}
+
+.banner {
+    z-index: 0;
+}
+
+.banner-points {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+    color: white;
+    font-size: 4vw;
+}
+
+.swpstk {
+    margin-left: 5px;
+    margin-top: 0px;
+    padding: 2px;
+    box-shadow: 3px 3px lightgray;
+}
+
+.description {
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: -12px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -8px;
+    margin-bottom: 25px;
+  }
+
+.giftcard {
+    padding: 2px;
+}
+
+.grid {
+    position: static;
+    align-content: center;
+}
+
+.content {
+    margin: 40px;
 }
