@@ -1,36 +1,19 @@
-<ion-header [translucent]="true">
+<ion-header class="ionic-header">
+  <img class="logo" src="assets/logo_horizontal.png">
+  <img class="profile" src="assets/profile_icon.png">
   <ion-toolbar class="app-header">
     <ion-title class="title">
-      Scan Your Barcode
+      Scan
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content>
   <ion-header collapse="condense">
     <ion-toolbar class="app-header">
       <ion-title size="large">Scan Your Barcode</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <!-- Fallback for iOS PWA -->
-  <input #fileinput type="file" accept="image/*;capture=camera" hidden (change)="handleFile($event.target.files)">
-
-  <!-- Trigger the file input -->
-  <ion-button class="scan-btn" color="secondary" expand="full" (click)="startScan()">
-    <ion-icon slot="start" name="qr-scanner"></ion-icon>
-    Start scan
-  </ion-button>
-
-  <ion-button class="capture-btn" expand="full" (click)="captureImage()">
-    <ion-icon slot="start" name="camera"></ion-icon>
-    Capture Image
-  </ion-button>
-
-  <ion-button expand="full" (click)="reset()" color="warning" *ngIf="scanResult">
-    <ion-icon slot="start" name="refresh"></ion-icon>
-    Reset
-  </ion-button>
 
   <!-- Shows our camera stream -->
   <video #video [hidden]="!scanActive" width="100%"></video>
@@ -52,4 +35,22 @@
       {{ scanResult }}
     </ion-card-content>
   </ion-card>
+  <!-- Fallback for iOS PWA -->
+  <input #fileinput type="file" accept="image/*;capture=camera" hidden (change)="handleFile($event.target.files)">
+
+  <!-- Trigger the file input -->
+  <ion-button class="scan-btn" expand="full" (click)="startScan()">
+    <ion-icon slot="start" name="qr-scanner"></ion-icon>
+    Start scan
+  </ion-button>
+
+  <ion-button class="capture-btn" color="secondary" expand="full" (click)="captureImage()">
+    <ion-icon slot="start" name="camera"></ion-icon>
+    Capture Image
+  </ion-button>
+
+  <ion-button expand="full" (click)="reset()" color="warning" *ngIf="scanResult">
+    <ion-icon slot="start" name="refresh"></ion-icon>
+    Reset
+  </ion-button>
 </ion-content>

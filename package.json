@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "gh-pages": "ng build --base-href 'https://brittanymorrisdesign.github.io/CartCompare/' --prod && npx ngh --dir=www/"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "@capacitor/keyboard": "1.1.2",
     "@capacitor/status-bar": "1.0.5",
     "@ionic/angular": "^5.5.2",
+    "angular-cli-ghpages": "^1.0.0",
     "firebase": "^8.0.2",
     "jsqr": "^1.4.0",
     "rxjs": "~6.6.0",
@@ -38,7 +40,7 @@
     "@angular-eslint/eslint-plugin": "~12.0.0",
     "@angular-eslint/eslint-plugin-template": "~12.0.0",
     "@angular-eslint/template-parser": "~12.0.0",
-    "@angular/cli": "12.1.4",
+    "@angular/cli": "~12.1.1",
     "@angular/compiler": "~12.1.1",
     "@angular/compiler-cli": "~12.1.1",
     "@angular/language-service": "~12.0.1",

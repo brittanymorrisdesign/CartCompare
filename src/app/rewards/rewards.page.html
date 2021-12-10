@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header class="ionic-header">
   <img class="logo" src="assets/logo_horizontal.png">
   <img class="profile" src="assets/profile_icon.png">
   <ion-toolbar class="app-header">
@@ -8,66 +8,105 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div>
-    <img src="./assets/rewards/Logo.png">
-  </div>
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Saved Items</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <div class="banner">
-    <img src="./assets/rewards/banner.png">
-    <div class="banner_reward"><b>Rewards</b></div>
-    <div class="banner_points"><b>10,000 Points</b></div>
-  </div>
-
-  <p><b>Sweepstakes</b></p>
-  <div class="wrapper">
-    <div>
-      <img class="swpstk" src="./assets/rewards/iphone13.jpg" width="80" height="80">
-      <p class="description">iPhone 13 Max Pro <br>10 points</p>
-    </div>
-    <div>
-      <img class="swpstk" src="./assets/rewards/hp_chromebook.jpg" width="80" height="80">
-      <p class="description">HP ChromeBook <br>10 points</p>
-    </div>
-    <div>
-      <img class="swpstk" src="./assets/rewards/apple_airpod.jpg" width="80" height="80">
-      <p class="description">Apple Airpods <br>5 points</p>
-    </div>
-  </div>
-
-  <p><b>Gift Cards</b></p>
-  <div class="wrapper">
-    <div class="giftcard">
-      <img src="./assets/rewards/amazon.png" style="position:relative; top:-16px;">
-      <p class="description" style="position:relative; top:-32px;">$20 Amazon <br> 20,000 points</p>
-    </div>
-    <div class="giftcard">
-      <a href="../rewards-giftcard-info">
-      <img src="./assets/rewards/bestbuy.jpg">
-      </a>
-      <p class="description">$10 Best Buy <br>10,000 points</p>
-    </div>
-    <div class="giftcard">
-      <img src="./assets/rewards/olive_garden.jpg" >
-      <p class="description">$100 Olive Garden <br>100,000 points</p>
-    </div>
-    <div class="giftcard">
-      <img src="./assets/rewards/applebees.png">
-      <p class="description">$50 Applebees <br> 50,000 points</p>
-    </div>
-    <div class="giftcard">
-      <img src="./assets/rewards/walmart.png">
-      <p class="description">$10 Walmart <br>10,000 points</p>
-    </div>
-    <div class="giftcard">
-      <img src="./assets/rewards/amc.png" >
-      <p class="description">$50 AMC <br>50,000 points</p>
-    </div>
-  </div>
-
-  <!--temp link to redeem for testing-->
-  <a href="../rewards-giftcard-redeem">giftcard redeem</a>
-
-  <!--<button ion-button (click)="giftcard_info()">Go to giftcard info page</button>-->
-  <!--<ion-button href="../rewards-giftcard-info">Here</ion-button>-->
+  <!--Content-->
+  <ion-grid>
+    <div class="content-title">Sweepstakes</div>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/iphone13.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>iPhone 13 Max Pro</ion-card-title>
+            <ion-card-subtitle>10 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/hp_chromebook.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>HP ChromeBook </ion-card-title>
+            <ion-card-subtitle>10 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/apple_airpod.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Apple Airpods</ion-card-title>
+            <ion-card-subtitle>10 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-item-divider></ion-item-divider>
+      <div class="content-title">Gift Cards</div>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/amazon.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>$20 <br> Amazon</ion-card-title>
+            <ion-card-subtitle>20,000 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/bestbuy.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>$10 <br> Best Buy</ion-card-title>
+            <ion-card-subtitle>10,000 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/olive_garden.jpg"></ion-img>
+          <ion-card-header>
+            <ion-card-title>$100 <br> Olive Garden</ion-card-title>
+            <ion-card-subtitle>100,000 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/applebees.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>$50 <br> Applebees</ion-card-title>
+            <ion-card-subtitle>50,000 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/walmart.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>$10 <br> Walmart</ion-card-title>
+            <ion-card-subtitle>10,000 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card>
+          <ion-img src="./assets/rewards/amc.png"></ion-img>
+          <ion-card-header>
+            <ion-card-title>$50 <br> AMC</ion-card-title>
+            <ion-card-subtitle>50,000 points</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--End of Content-->
 </ion-content>
