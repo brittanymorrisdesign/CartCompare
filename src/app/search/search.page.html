@@ -5,7 +5,8 @@
     <ion-title class="title">
       Search Items
     </ion-title>
-    <ion-searchbar class="search-bar"></ion-searchbar>
+    <ion-searchbar class="search-bar" placeholder="Search for items.." [(ngModel)]="filterTerm" animated="true">
+    </ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
@@ -17,10 +18,20 @@
   </ion-header>
   <!--Content-->
   <ion-content fullscreen>
-    <ion-list>
-      <ion-item>Amsterdam</ion-item>
-
-    </ion-list>
+    <ion-row>
+      <ion-col>
+        <ion-card *ngFor="let data of products | filter:filterTerm">
+          <ion-row>
+            <ion-col>
+              <ion-img src="{{data.image}}"></ion-img>
+              <ion-card-header>
+                <ion-card-title>{{data.title}}</ion-card-title>
+                <ion-card-subtitle>{{data.price}}</ion-card-subtitle>
+                <ion-card-subtitle>{{data.description}}</ion-card-subtitle>
+              </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
   </ion-content>
   <!--End of Content-->
 </ion-content>

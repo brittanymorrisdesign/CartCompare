@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { SearchPage } from './search.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 import { SearchPageRoutingModule } from './search-routing.module';
 
@@ -14,7 +15,8 @@ import { SearchPageRoutingModule } from './search-routing.module';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    SearchPageRoutingModule
+    SearchPageRoutingModule,
+    Ng2SearchPipeModule
   ],
   declarations: [SearchPage]
 })

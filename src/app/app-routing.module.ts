@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
   },
+  {
+    path: 'save-details',
+    loadChildren: () => import('./save-details/save-details.module').then( m => m.SaveDetailsPageModule)
+  },
 ];
 @NgModule({
   imports: [
