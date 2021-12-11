@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 
 
 export class SearchPage {
-
+  filterTerm: string;
   constructor() { }
 
   products = [
