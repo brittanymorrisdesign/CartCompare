@@ -20,8 +20,17 @@ const routes: Routes = [
   },
   {
     path: 'save-details',
-    loadChildren: () => import('./save-details/save-details.module').then( m => m.SaveDetailsPageModule)
+    loadChildren: () => import('./save-details/save-details.module').then(m => m.SaveDetailsPageModule)
   },
+  {
+    path: 'rewards-giftcard-info',
+    loadChildren: () => import('./rewards-giftcard-info/rewards-giftcard-info.module').then(m => m.RewardsGiftcardInfoPageModule)
+  },
+  {
+    path: 'rewards-giftcard-redeem',
+    loadChildren: () => import('./rewards-giftcard-redeem/rewards-giftcard-redeem.module').then(m => m.RewardsGiftcardRedeemPageModule)
+  },
+
 ];
 @NgModule({
   imports: [

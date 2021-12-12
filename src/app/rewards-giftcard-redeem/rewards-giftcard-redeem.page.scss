@@ -19,8 +19,7 @@
 
 .giftcard_img{
     position: absolute;
-    left: 15px;
-    top: 10px;
+    margin-left: 20px
 }
 
 .giftcard_description{
@@ -37,7 +36,7 @@
 }
 
 .form{
-    margin-left: -10px;
+    margin: 20px
 }
 
 .field{
@@ -52,4 +51,30 @@
 ion-button{
     --background: #F79326;
     --border-radius: 10px;
+}
+
+
+.ionic-header {
+    background-color: white;
+}
+
+.title {
+    margin:  20px 20px 20px 10px;
+    font-size: 30px;
+}
+
+.logo {
+    float: left;
+    margin: 10px;
+    width: 50vw;
+}
+
+.profile {
+    float: right;
+    margin: 20px;
+    width: 10vw;
+}
+
+.title-giftcard {
+    margin: 20px
 }

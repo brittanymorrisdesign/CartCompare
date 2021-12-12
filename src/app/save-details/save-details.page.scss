@@ -52,7 +52,6 @@
     margin-right: 10px;
     margin-top: 5px;
 }
-
 ion-button {
     --background: #F79326;
     --border-radius: 10px;
@@ -76,9 +75,13 @@ ion-button {
 
 .back-title {
     float: right;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .back-btn {
-    margin: 5px;
+    margin: 10px;
+}
+
+.item-div {
+    margin: 80px 20px 80px 20px;
 }

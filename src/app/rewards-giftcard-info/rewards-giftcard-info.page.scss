@@ -45,3 +45,29 @@ ion-button{
     --background: #F79326;
     --border-radius: 10px;
 }
+
+.ionic-header {
+    background-color: white;
+}
+
+.title {
+    margin:  20px 20px 20px 10px;
+    font-size: 30px;
+}
+
+.logo {
+    float: left;
+    margin: 10px;
+    width: 50vw;
+}
+
+.profile {
+    float: right;
+    margin: 20px;
+    width: 10vw;
+}
+
+.banner {
+    margin-bottom: 10px;
+    position: fixed;
+}
